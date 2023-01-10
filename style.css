@@ -1,0 +1,34 @@
+body{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.banantarto{
+    display: flex;
+    flex-direction: row-reverse;
+    align-self: flex-start;
+}
+#banan{
+ width: 20%;
+ height: 20%; 
+ position: relative; 
+ animation-name: anim;
+ animation-timing-function: linear; 
+ animation-delay: 1s;
+ animation-duration: 3s;
+ animation-fill-mode: forwards;
+}
+#majom{
+    width: 100%;
+    height: 100%;
+}
+@keyframes anim{
+    0%{right: 0%; top: 0%; }
+    0%{right: 20%; top: 2%;}
+    20%{right: 40%; top: 4%;}
+    40%{right: 60%; top: 6%;}
+    60%{right: 80%; top: 10%;}
+    80%{right: 100%; top: 14%;}
+    100%{right: 125%; top: 18%; transform: rotate(1440deg);}
+}
